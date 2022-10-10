@@ -15,7 +15,7 @@ const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = useState("left");
   return (
-    <div>
+    <div className="nav">
       <RadioGroup defaultValue={placement} onChange={setPlacement}></RadioGroup>
       <Button colorScheme="blue" onClick={onOpen}>
         <HamburgerIcon />
